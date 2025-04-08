@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Frank's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="contacts-bg">
+    <header>
+        <button class="nav-toggle" aria-label="Toggle Navigation">☰</button>
+        <div class="logo">
+            <img src="images/Logo.png" alt="FLC Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contacts.html" class="active">Contacts</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </header>
+
+    <main class="contacts-container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out if you have any questions, project inquiries, or just want to connect!</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send me a message</h2>
+            <form id="userForm">
+                <div id="result"></div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject (Optional):</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <section class="other-contacts">
+            <h2>Other Ways to Connect</h2>
+            <p>You can also find me on these platforms:</p>
+            <div class="social-links">
+                <a href="linkedin.html" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="twitter.html" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="instagram.html" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="facebook.html" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="email.html"><img src="images/email.png" alt="Email Me"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Frank's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
